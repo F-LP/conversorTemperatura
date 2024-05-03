@@ -24,33 +24,93 @@ Scanner(System.in);
 
             case 1:
         System.out.println("Digite a temperatura em Celsius: ");
-        temperatura = scanner.nextDouble();
-        resultado = calsiusParaFahrenheit(temperatura);
-        System.out.println("Resusltado: " + resultado + " Fahrenheit");
+            temperatura = scanner.nextDouble();
+            resultado = celsiusParaFahrenheit(temperatura);
+        System.out.println("Resultado: " + resultado + " Fahrenheit");
                 
                 break;
 
             case 2:
-        
-        
-            default:
+        System.out.println("Digite a temperatura em Fahrenheit: ");
+            temperatura = scanner.nextDouble();
+            resultado  = fahrenheitParaCelsius(temperatura);
+        System.out.println("Resultado:" + resultado + "Celsius");
+             
                 break;
+
+            case 3:
+        System.out.println("Digite a temperatura em Celsius: ");
+            temperatura = scanner.nextDouble();
+            resultado = celsiusParaKelvin(temperatura);
+        System.out.println("Resultado: " + resultado + "Kelvin");
+
+                break;
+            
+            case 4:
+        System.out.println("Digite a temperatura em Kelvin: ");
+            temperatura = scanner.nextDouble();
+            resultado = kelvinParaCelsius(temperatura);
+        System.out.println("Resultado: " + resultado + "Celsius");
+
+                break;
+
+            case 5:
+        System.out.println("Digite a temperatura em Fahrenheit: ");
+            temperatura = scanner.nextDouble();
+            resultado = fahrenheitParaKelvin(temperatura);
+        System.out.println("Resultado: " + resultado + "Kelvin");
+            
+                break;
+
+            case 6:
+        System.out.println("Digite a temperatura em Kelvin: ");
+            temperatura = scanner.nextDouble();
+            resultado = kelvinParaFarenheit(temperatura);
+        System.out.println("Resultado: " + resultado + "Fahrenheit");
+
+                break;
+
+            default:
+        System.out.println("opção inválida.Por favor selecione uma opção válida");
+        
+
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        scanner.close();
 
     }
+
+    public static double celsiusParaFahrenheit (double Celsius)
+    {
+
+        return (celsius * 9 / 5) + 32;
+    
+    }
+
+    public static double fahrenheitParaCelsius(double fahrenheit)
+    {
+
+        return (fahrenheit - 32) * 5/ 9;
+
+    }
+
+    public static double celsiusParaKelvin(double Celsius)
+    {
+
+        return Celsius + 273.15;
+
+    }
+
+    public static double kelvinParaCelsius(double Kelvin)
+    {
+        return 
+    }
+
+
+
+
+
+
+
+
 }

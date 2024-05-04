@@ -83,7 +83,7 @@ Scanner(System.in);
     public static double celsiusParaFahrenheit (double Celsius)
     {
 
-        return (celsius * 9 / 5) + 32;
+        return ( Celsius * 9 / 5) + 32;
     
     }
 
@@ -103,14 +103,23 @@ Scanner(System.in);
 
     public static double kelvinParaCelsius(double Kelvin)
     {
-        return 
+
+        return Kelvin - 273.15;
+    
     }
 
+    public static double fahrenheitParaKelvin(double fahrenheit)
+    {
 
+        return (fahrenheit + 459.67) * 5 / 9;
 
+    }
 
+    public static double kelvinParaFarenheit(double Kelvin)
+    {
 
+        return (Kelvin * 9 / 5) - 459.67;
 
-
+    }
 
 }
